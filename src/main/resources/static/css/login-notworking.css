@@ -1,0 +1,92 @@
+.image-container {
+    background: url("https://unsplash.com/photos/qbqnCPHM_kU") center no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #555555;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-box h4 {
+    font-weight: bold;
+    color: white;
+}
+.form-box .form-input {
+    position: relative;
+}
+
+.form-bx .form-input input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    padding-left: 45px;
+}
+
+.form-box .form-input span {
+    position: absolute;
+    top: 8px;
+    padding-left: 20px;
+    color: #777777;
+}
+
+.form-box .form-input input::placeholder {
+    padding-left: 0px;
+}
+
+.form-box .form-input input:focus,
+.form-box .form-input input:valid {
+    border-bottom: 2px solid #dc3535;
+}
+
+.form-box input[type="checkbox"]:not(:checked) + label:before{
+    background: transparent;
+    border: 2px solid #ffffff;
+    width: 15px;
+    height: 15px;
+}
+
+.form-box .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #dc3545;
+    border: 0px;
+}
+
+.form-box button[type="submit"] {
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.form-box button[type="submit"]:hover {
+    -webkit-box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.55);
+    box-shadow: 0px 9px 10px -2px rgba(0,0,0,0.55);
+}
+
+.forgot-link, .register-link {
+    color: white;
+    font-weight: bold;
+}
+
+.forgot-link:hover, .register-link:hover {
+    color: #292525;
+}

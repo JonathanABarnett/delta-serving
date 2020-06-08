@@ -9,6 +9,6 @@ public class HomeController {
     @GetMapping({"/", "/index"})
     public String index() {
 
-        return "views/login_register";
+        return "views/login_and_register";
     }
 }
